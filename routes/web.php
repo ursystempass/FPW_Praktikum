@@ -7,7 +7,7 @@ Route::get('/', function () {
 }); 
 
 Route::get('/about', function () {
-    return 'Selamat datang di app POS   ';
+    return 'Selamat datang di app POS';
 });
 
 Route::get('/produk', function () {
