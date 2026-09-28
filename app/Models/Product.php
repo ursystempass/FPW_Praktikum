@@ -15,8 +15,8 @@ class Product extends Model
         'stock'
     ];
 
-    public function category()
-    {
+    public function category()  
+        {
         return $this->belongsTo(Category::class);
     }
 
@@ -24,4 +24,9 @@ class Product extends Model
     {
         return $this->hasMany(TransactionDetail::class);
     }
+
+    public function getPriceRupiahAttribute()
+{
+    return 'Rp ' . number_format($this->price, 0, ',', '.');
+}
 }

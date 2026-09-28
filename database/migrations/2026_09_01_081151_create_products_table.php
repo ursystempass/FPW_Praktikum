@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('price');
             $table->unsignedInteger('stock')->default(0);
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
